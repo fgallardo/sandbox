@@ -6,7 +6,7 @@ import numpy as np
 
 
 #f.gallardo.lopez@gmail.com
-#This code was just made to check a Frequency estimator method for DSP. Based on Cagatay Candan paper "A Method For Fine Resolution Frequency Estimation From Three DFT Samples". Is just some code for DSP testing. This code is not really useful in real application, it is just to see how the method performs. 
+#This code was just made to check a Frequency estimator method for DSP. Based on Cagatay Candan paper "A Method For Fine Resolution Frequency Estimation From Three DFT Samples". Is just some code for DSP testing. This code is not really useful in real applications, it is just to see how the method performs. 
 #http://www.eee.metu.edu.tr/~ccandan/pub_dir/FineDopplerEst_IEEE_SPL_June2011.pdf
 
 
@@ -29,7 +29,7 @@ A0=1 #Sinusoid Ampliutde
 t=np.linspace(ini,fin,int(np.round((fin-ini)*(fs))))
 y=A0*np.cos(2*np.pi*f*t)
 Y=np.fft.fft(y,1024) #I was interested in a 1024 points FFT for a real application.
-#http://docs.scipy.org/doc/numpy/reference/routines.fft.html It is always a good idea to check how FFT is performed.
+
 
 
 if muestra==1:
@@ -37,7 +37,8 @@ if muestra==1:
 	plt.title("Just the positive freq")
 	plt.stem(abs(Y[1:512][::-1])) #I just want the positive output and I want it reversed.
 	plt.subplot(212)
-	plt.title("Complete FFT. X[0]=CC. Positive Frequs from n=1 to n=512. Negative freq from n 513 to n=1023")
+	plt.title("Complete FFT. X[0]=CC. Positive Frequs from n=1 to n=512. Negative freq from n 513 to n=1023") #yep, numpy does it this way...
+#http://docs.scipy.org/doc/numpy/reference/routines.fft.html It is always a good idea to check how FFT is performed.
 	plt.stem(abs(Y))
 	plt.show()
 
