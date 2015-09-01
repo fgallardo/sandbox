@@ -70,7 +70,7 @@ freqestim=((np.tan(np.pi/N))/(np.pi/N))*((Rkp_1 - Rkp1)/((2*Rkp0)-Rkp_1 - Rkp1))
 print "##########################################"
 print "This is the frequency estimated with this method:"
 print ((maxbin+freqestim)*fs/(N))
-print "This is the real frequency the sinousoid have"
+print "This is the real frequency the sinousoid has"
 print f
 print "This would be the value we would have with a spectral resolution of %d points:"%N
 print (maxbin*fs/N)
