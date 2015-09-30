@@ -42,7 +42,7 @@ def main():
 	plt.ylabel("z Km")
 	plt.figure()
 	plt.plot(dist(x,y,z),a[1])
-	plt.title("One Way Light time between observer and target")
+	plt.title("One Way distance between observer and target")
 	plt.ylabel("Minutes")
 	plt.xlabel("Km")
 	fig=plt.figure()
