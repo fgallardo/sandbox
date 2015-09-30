@@ -1,0 +1,31 @@
+KPL\MK
+
+\begintext
+
+Metkernel para el ejemplo
+
+\begindata
+#Change this folder and download the necessary kernels.
+PATH_VALUES=('/home/fgallardo/spice/python/pruebas')
+PATH_SYMBOLS=('KERNELS')
+KERNELS_TO_LOAD=('$KERNELS/030201AP_SK_SM546_T45.bsp','$KERNELS/naif0011.tls',
+'$KERNELS/de421.bsp','$KERNELS/pck00008.tpc')
+
+
+\begintext
+
+All these line are just comments.
+#spi.furnsh("./pruebas/naif0011.tls")
+#spi.furnsh("./pruebas/030201AP_SK_SM546_T45.bsp")
+#spi.furnsh("./pruebas/pck00008.tpc") #Info fisica sobre los planetas, me da el IAU_EARTH
+#spi.furnsh("./pruebas/de421.bsp")#Pointing of Earth 
+EL PE 10350... es un kernel SPK de Cassini de 15/Dic/2015 a las 9:21:00 am al 25 Dic 2010 a las 2am
+
+
+'$KERNELS/020514_SE_SAT105.bsp',
+'$KERNELS/981005_PLTEPH-DE405S.bsp',
+'$KERNELS/030201AP_OPK_SM546_T45.bsp',
+'$KERNELS/04135_04171pc_psiv2.bc',
+'$KERNELS/cas_v40.tf',
+'$KERNELS/cas_iss_v10.ti')
+
