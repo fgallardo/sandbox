@@ -14,7 +14,7 @@ KERNELS_TO_LOAD=('$KERNELS/030201AP_SK_SM546_T45.bsp','$KERNELS/naif0011.tls',
 
 \begintext
 
-All these line are just comments.
+All these lines are just comments.
 #spi.furnsh("./pruebas/naif0011.tls")
 #spi.furnsh("./pruebas/030201AP_SK_SM546_T45.bsp")
 #spi.furnsh("./pruebas/pck00008.tpc") #Info fisica sobre los planetas, me da el IAU_EARTH
