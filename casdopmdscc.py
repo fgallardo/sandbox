@@ -88,8 +88,8 @@ def main():
 
 def station(dat):
 	if dat==0: #Robledo
-		longi=4+(14/60)+(53/3600) #W (-1)
-		lati=40+(25/60)+(54/3600) #N
+		longi=4+(14./60)+(53./3600) #W (-1)
+		lati=40+(25./60)+(54/.3600) #N
 		longi= -longi*(np.pi/180)
 		lati=lati*(np.pi/180)
 		alti=720/1000 #Va con Km
